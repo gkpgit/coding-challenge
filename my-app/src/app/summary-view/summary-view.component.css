@@ -1,0 +1,9 @@
+.value-cell {
+    width: 75%;
+    padding: 12px;
+}
+
+.label-cell {
+    width: 25%;
+    padding: 12px;
+}

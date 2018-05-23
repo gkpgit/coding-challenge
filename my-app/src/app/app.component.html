@@ -1,0 +1,28 @@
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Quite Simple App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/form-one']" [routerLinkActive]="['is-active']">Form One</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/form-two']" [routerLinkActive]="['is-active']">Form Two</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/summary-view']" [routerLinkActive]="['is-active']">Summary</a>
+          </li>
+        </ul>
+      </div> -->
+    </nav>
+  </header>
+  <main clas="jumbotron">
+      <div>
+          <router-outlet></router-outlet>
+      </div>
+  </main>

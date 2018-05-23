@@ -1,0 +1,21 @@
+<form novalidate [formGroup]="myform" (ngSubmit)="onSubmit()">
+  <div class="form-group col-6">
+    <label for="age">Age</label>
+    <input type="number" class="form-control" formControlName="age" id="age" required
+      [(ngModel)]="age" name="age">
+  </div>
+
+  <div class="form-group col-6">
+    <label for="gender">Gender</label>
+    <select class="form-control" formControlName="gender" id="gender" required
+      [(ngModel)]="gender" name="gender">
+      <option value="" selected="selected">Please select gender</option>
+      <option *ngFor="let g of genders"
+              [value]="g">{{g}}
+      </option>
+    </select>
+  </div>
+  <div class="col-6">
+    <button type="submit" class="btn btn-primary" >Submit</button>
+  </div>
+</form>
